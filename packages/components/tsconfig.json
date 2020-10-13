@@ -7,6 +7,7 @@
 	"references": [],
     "include": [
 		"src/dashicon/*",
+		"src/base-control/*",
 		"src/visually-hidden/*"
 	],
 }
