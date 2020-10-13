@@ -1,4 +1,4 @@
-function Dashicon( { icon, size = 20, className, ...extraProps } ) {
+function Dashicon( { icon, className, ...extraProps } ) {
 	const iconClass = [
 		'dashicon',
 		'dashicons',
@@ -8,14 +8,7 @@ function Dashicon( { icon, size = 20, className, ...extraProps } ) {
 		.filter( Boolean )
 		.join( ' ' );
 
-	return (
-		<span
-			className={ iconClass }
-			width={ size }
-			height={ size }
-			{ ...extraProps }
-		/>
-	);
+	return <span className={ iconClass } { ...extraProps } />;
 }
 
 export default Dashicon;
